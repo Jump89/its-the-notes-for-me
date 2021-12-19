@@ -10,15 +10,14 @@ router.get('/notes', (req, res) => {
 })
 // when you visit the notes, get the current list and send 
 router.post('/notes', (req, res) => {
-    console.log(req.body);
     const noteAdded = addNote(req.body, notes);
     res.json(noteAdded);
 })
 
 router.delete('/notes/:id', (req, res) => {
-    console.log(req.body);
-    console.log(notes);
-    })
+    deleteNote(req.params.id, notes);
+    res.json(req.body);
+})
 
 
 module.exports = router;
