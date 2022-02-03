@@ -53,4 +53,4 @@
 ## Landing Page Screen Shot 
 
 * ![](public/image/notelanding.png)
-
+* ![](public/image/notetaking.png)
